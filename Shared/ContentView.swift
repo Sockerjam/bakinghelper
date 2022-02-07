@@ -8,9 +8,19 @@
 import SwiftUI
 
 struct ContentView: View {
+
+    @State var startAnimation: Bool = false
+
     var body: some View {
-        Text("Hello, world!")
-            .padding()
+        VStack {
+            if startAnimation {
+                HeadLineView()
+                    .padding(.vertical)
+                AppInfoView()
+            }
+        } .animateView {
+            startAnimation = true
+        }
     }
 }
 
