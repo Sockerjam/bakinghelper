@@ -6,10 +6,12 @@
 //
 
 import Foundation
+import SwiftUI
 
 struct Card: Identifiable {
     
-    var id: Int
+    let id: Int
+    var offset: CGFloat
     let image: String
     let step: String
     let description: String

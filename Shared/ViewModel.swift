@@ -8,10 +8,22 @@
 import Foundation
 import SwiftUI
 
-class ViewModel {
+protocol CardLoader {
+    var tutorialCards: [Card] { get set }
+    func reloadCards()
+}
+
+class ViewModel: CardLoader, ObservableObject {
     
-    let tutorialCards: [Card] = [
-        Card(id: 0, image: "orange", step: "Step 1", description: "Open Safari"),
-        Card(id: 1, image: "green", step: "Step 2", description: "Highlight Ingridients"),
-        Card(id: 2, image: "pink", step: "Step 3", description: "Open Extension")]
+    @Published var tutorialCards: [Card] = [
+        Card(id: 0, offset: 0, image: "orange", step: "Step 1", description: "Open Safari"),
+        Card(id: 1, offset: 0, image: "green", step: "Step 2", description: "Highlight Ingridients"),
+        Card(id: 2, offset: 0, image: "pink", step: "Step 3", description: "Open Extension")]
+
+    func reloadCards() {
+        tutorialCards = [
+            Card(id: 0, offset: 0, image: "orange", step: "Step 1", description: "Open Safari"),
+            Card(id: 1, offset: 0, image: "green", step: "Step 2", description: "Highlight Ingridients"),
+            Card(id: 2, offset: 0, image: "pink", step: "Step 3", description: "Open Extension")]
+    }
 }
