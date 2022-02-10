@@ -10,11 +10,19 @@ import SwiftUI
 struct ButtonView: View {
     var body: some View {
         Button {
-            print("Open Safari")
+            guard let url = URL(string: "http://apple.com") else { assertionFailure(); return }
+            UIApplication.shared.open(url)
+
         } label: {
-            Text("Open Safari")
+            Label("Open Safari", systemImage: "network")
+                .font(.system(size: 14, weight: .medium, design: .monospaced))
+                .frame(height: 30)
+                
         }
-        .foregroundColor(.red)
+        .buttonStyle(.borderedProminent)
+        .buttonBorderShape(.capsule)
+        .tint(.black)
+        .foregroundColor(.white)
 
     }
 }

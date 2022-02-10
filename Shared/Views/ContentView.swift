@@ -13,18 +13,16 @@ struct ContentView: View {
     
     var body: some View {
         VStack {
+            Text("The Baking Helper")
+                .font(.system(size: 30, weight: .bold, design: .monospaced))
+                .padding(.vertical, 30)
             CardsView(cardLoader: cardLoader)
+                .padding(.vertical, 40)
+            Spacer()
             ButtonView()
         }
 
     }
-    //TODO - Implement width to work for multiple screen sizes
-//    private func calculateWidth() -> CGFloat {
-//        let screenWidth = UIScreen.main.bounds.width - 30
-//        let width = screenWidth - (2 * 30)
-//        print(width)
-//        return width
-//    }
 }
 
 struct ContentView_Previews: PreviewProvider {

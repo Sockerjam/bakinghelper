@@ -10,7 +10,7 @@ import SwiftUI
 
 struct Card: Identifiable {
     
-    let id: Int
+    var id: Int
     var offset: CGFloat
     let image: String
     let step: String
