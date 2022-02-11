@@ -19,6 +19,7 @@
 		929B2CE12773BB3F00D22A74 /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 929B2CDF2773BB3F00D22A74 /* MainInterface.storyboard */; };
 		929B2CE52773BB3F00D22A74 /* Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 929B2CD62773BB3F00D22A74 /* Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		929B2CEB2773C28500D22A74 /* Action.js in Resources */ = {isa = PBXBuildFile; fileRef = 929B2CEA2773C28500D22A74 /* Action.js */; };
+		92CD05BB27B65C70004D2130 /* ConvertJavaScript.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92CD05BA27B65C70004D2130 /* ConvertJavaScript.swift */; };
 		92F2AC5727B565EC009C10B4 /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92F2AC5527B565EC009C10B4 /* Card.swift */; };
 		92F2AC5827B565EC009C10B4 /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92F2AC5527B565EC009C10B4 /* Card.swift */; };
 		92F2AC5927B565EC009C10B4 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92F2AC5627B565EC009C10B4 /* ViewModel.swift */; };
@@ -67,6 +68,7 @@
 		929B2CE02773BB3F00D22A74 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
 		929B2CE22773BB3F00D22A74 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		929B2CEA2773C28500D22A74 /* Action.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = Action.js; sourceTree = "<group>"; };
+		92CD05BA27B65C70004D2130 /* ConvertJavaScript.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConvertJavaScript.swift; sourceTree = "<group>"; };
 		92F2AC5527B565EC009C10B4 /* Card.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
 		92F2AC5627B565EC009C10B4 /* ViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
 		92F2AC5C27B57692009C10B4 /* CardsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardsView.swift; sourceTree = "<group>"; };
@@ -153,6 +155,7 @@
 			children = (
 				929B2CDB2773BB3F00D22A74 /* Media.xcassets */,
 				929B2CDD2773BB3F00D22A74 /* ActionViewController.swift */,
+				92CD05BA27B65C70004D2130 /* ConvertJavaScript.swift */,
 				929B2CDF2773BB3F00D22A74 /* MainInterface.storyboard */,
 				929B2CE22773BB3F00D22A74 /* Info.plist */,
 				929B2CEA2773C28500D22A74 /* Action.js */,
@@ -327,6 +330,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				92CD05BB27B65C70004D2130 /* ConvertJavaScript.swift in Sources */,
 				929B2CDE2773BB3F00D22A74 /* ActionViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
